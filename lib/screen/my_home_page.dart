@@ -40,10 +40,16 @@ class _MyHomePageState extends State<MyHomePage> {
             ElevatedButton(
               onPressed: incrementCounter,
               child: const Icon(Icons.add),
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Colors.red),
+              ),
             ),
             ElevatedButton(
               onPressed: decrementCounter,
               child: const Icon(Icons.remove),
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Colors.green),
+              ),
             ),
           ],
         ),
